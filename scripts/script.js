@@ -83,7 +83,6 @@ $(document).ready(function () {
     })
     $('.page3').hide()
     $('.page4').hide()
-
     $(window).resize(()=>{
         if($(window).width() > 767) {
             $('.page1-moblie,.footer-desc-mobile,.contact-mobile').hide()
@@ -96,7 +95,7 @@ $(document).ready(function () {
 
     if($(window).width() > 767) {
         $('.page1-moblie,.footer-desc-mobile,.contact-mobile').hide()
-        $('.page1,.footer-desc,.contact-mobile').show()
+        $('.page1,.footer-desc').show()
     }else if($(window).width() < 767){
         $('.page1,.footer-desc').hide()
         $('.page1-moblie,.footer-desc-mobile,.contact-mobile').show()
