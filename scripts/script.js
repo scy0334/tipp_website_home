@@ -46,17 +46,13 @@ $(document).ready(function () {
     })
 
     jQuery.get('terms_of_use.txt', function(data) {
-        // var lines = data.split("\n");
-
-        // $.each(lines, function (n, elem) {
-        //     $('#terms-of-use-text').append('<div>' + elem + '</div>');
-        // });
-        $('#terms-of-use.txt').html(data)
+        $('#terms-of-use-text').html(data)
      });
 
-     jQuery.get('privacy_policy.txt', function(data) {
+    jQuery.get('privacy_policy.txt', function(data) {
         $('#privacy-policy-text').html(data)
-     });
+    });
+
     $('#terms-of-use').click(()=>{
         $('.page4').hide()
         $('.footer').hide()
