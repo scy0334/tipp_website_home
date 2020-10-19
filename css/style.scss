@@ -551,12 +551,31 @@ body{
                 display: flex;
                 position: fixed;
                 animation: pageon 1s linear;
-                top: 34px !important;
+                top: 24px !important;
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
                 background-color: #fafafa;
                 #terms{
+                    padding: 15px;
+                    font-size: 10px;
+                    .subject{
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .page4{
+                z-index: 100;
+                display: flex;
+                position: fixed;
+                animation: pageon 1s linear;
+                top: 24px !important;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #fafafa;
+                #privacy{
                     padding: 15px;
                     font-size: 10px;
                     .subject{

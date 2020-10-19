@@ -789,7 +789,7 @@ body .load_modal .logo {
     position: fixed;
     -webkit-animation: pageon 1s linear;
             animation: pageon 1s linear;
-    top: 34px !important;
+    top: 24px !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -804,6 +804,31 @@ body .load_modal .logo {
     font-size: 10px;
   }
   .container .main-content .page3 #terms .subject {
+    font-size: 20px;
+  }
+  .container .main-content .page4 {
+    z-index: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    -webkit-animation: pageon 1s linear;
+            animation: pageon 1s linear;
+    top: 24px !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+  }
+  .container .main-content .page4 #privacy {
+    padding: 15px;
+    font-size: 10px;
+  }
+  .container .main-content .page4 #privacy .subject {
     font-size: 20px;
   }
   .container .footer {
