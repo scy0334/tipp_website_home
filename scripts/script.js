@@ -1,26 +1,54 @@
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         loop:true,
-        margin:0,
-        stagePadding: -80,
+        margin:220,
+        autoHeight:true,
+        //stagePadding: -80,
         autoplay: true,
         slideTransition: 'linear',
-        autoplaySpeed: 3000,
+        autoplaySpeed: 9000,
+        smartSpeed: 9000,
         autoplayHoverPause: false,
         nav:false,
+        responsiveClass:true,
+        responsiveBaseElement:'.page2',
         responsive:{
+            0:{
+                items:7
+            },
             450:{
-                items:3,
-            },
-            768:{
-                items:4,
-            },
-            1024:{
                 items:7,
+            },
+            700:{
+                margin:-100,
+                itmes:7,
+            },
+            900:{
+                margin:230,
+                items:7,
+            },
+            1100:{
+                margin:240,
+                items:7,
+            },
+            1200:{
+                margin:220,
+                items:7,
+            },
+            1300:{
+                margin:200,
+                items:7,
+            },
+            1400:{
+                margin:200,
+                items:7
             }
         }
     }).trigger("play.owl.autoplay");
 
+    $(".owl-carousel").on('onPlayVideo',function (e){
+
+    })
     $("#contact_bt").click(()=>{
         console.log("fdasf")
             var text = "contact@tippcorp.com"
@@ -90,11 +118,11 @@ $(document).ready(function () {
     });
 
     if($(window).width() > 767) {
-        $('.page1-moblie,.footer-desc-mobile,.contact-mobile').hide()
         $('.page1,.footer-desc').show()
+        $('.page1-moblie,.footer-desc-mobile,.contact-mobile').hide()
     }else if($(window).width() < 767){
-        $('.page1,.footer-desc').hide()
         $('.page1-moblie,.footer-desc-mobile,.contact-mobile').show()
+        $('.page1,.footer-desc').hide()
     }
 
 })

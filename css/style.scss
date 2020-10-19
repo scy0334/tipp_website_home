@@ -190,7 +190,7 @@ body{
         width: 100%;
         .logo{
             cursor: pointer;
-            animation: logo_anim 0.8s both 1s;
+            //animation: logo_anim 0.8s both 1s;
             margin: 20px 0px;
             height: 20px;
             img{
@@ -251,9 +251,9 @@ body{
             }
 
             .slogan-box{
-                margin:0px 100px;
+                margin:0px 70px;
                 .slogan{
-                    animation: slogan_anim 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both 1.2s;
+                    //animation: slogan_anim 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both 1.2s;
                     img{
                         height: 108px;
                     }
@@ -261,7 +261,8 @@ body{
                 .down-box{
                     z-index: 20;
                     text-align: center;
-                    margin-top: 32px;
+                    top: 100px;
+                    position: relative;
                     display: flex;
                     padding: 0px 45px;
                     justify-content: space-between;
@@ -298,6 +299,7 @@ body{
             overflow: hidden;
             .scroller{
                 .sub-videos{
+                    width: 189px;
                     display: inline-block;
                     .sub-video{
                         z-index: -99;
@@ -383,9 +385,9 @@ body{
         background-color: #000;
         color: #ffffff;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 13px;
         .footer-logo{
-            animation: logo_anim 0.8s both 1s;
+            //animation: logo_anim 0.8s both 1s;
             flex: 0 1 auto;
             margin-left: 40px;
             height: 28px;
@@ -441,7 +443,7 @@ body{
             width: 100%;
             .logo{
                 cursor: pointer;
-                animation: logo_anim 0.8s both 1s;
+                //animation: logo_anim 0.8s both 1s;
                 margin: 20px 0px;
                 height: 20px;
                 img{
@@ -516,7 +518,7 @@ body{
                     margin:36px 100px 50px 100px;
                     .slogan{
                         text-align: center;
-                        animation: slogan_anim 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both 1.2s;
+                        //animation: slogan_anim 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both 1.2s;
                         img{
                             height: 70px;
                         }
@@ -524,7 +526,7 @@ body{
                     .down-box{
                         z-index: 20;
                         text-align: center;
-                        margin-top: 32px;
+                        margin-top: 24px;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
@@ -636,7 +638,7 @@ body{
 }
 
 //tablet
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1150px) {
     .container{
         flex-direction: column;
         min-height: 100vh;
@@ -655,7 +657,7 @@ body{
             width: 100%;
             .logo{
                 cursor: pointer;
-                animation: logo_anim 0.8s both 1s;
+                //animation: logo_anim 0.8s both 1s;
                 margin: 20px 0px;
                 height: 20px;
                 img{
@@ -718,7 +720,7 @@ body{
                 .slogan-box{
                     margin:0px 20px;
                     .slogan{
-                        animation: slogan_anim 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both 1.2s;
+                        //animation: slogan_anim 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both 1.2s;
                         img{
                             height: 108px;
                         }
@@ -726,7 +728,8 @@ body{
                     .down-box{
                         z-index: 20;
                         text-align: center;
-                        margin-top: 32px;
+                        top: 100px;
+                        position: relative;
                         display: flex;
                         padding: 0px 45px;
                         justify-content: space-between;
@@ -854,7 +857,7 @@ body{
             font-weight: 700;
             font-size: 15px;
             .footer-logo{
-                animation: logo_anim 0.8s both 1s;
+                //animation: logo_anim 0.8s both 1s;
                 flex: 0 1 auto;
                 margin-left: 40px;
                 height: 28px;

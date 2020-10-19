@@ -312,8 +312,6 @@ body .load_modal .logo {
 
 .container #nav .logo {
   cursor: pointer;
-  -webkit-animation: logo_anim 0.8s both 1s;
-          animation: logo_anim 0.8s both 1s;
   margin: 20px 0px;
   height: 20px;
 }
@@ -399,12 +397,7 @@ body .load_modal .logo {
 }
 
 .container .main-content .page1 .slogan-box {
-  margin: 0px 100px;
-}
-
-.container .main-content .page1 .slogan-box .slogan {
-  -webkit-animation: slogan_anim 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both 1.2s;
-          animation: slogan_anim 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both 1.2s;
+  margin: 0px 70px;
 }
 
 .container .main-content .page1 .slogan-box .slogan img {
@@ -414,7 +407,8 @@ body .load_modal .logo {
 .container .main-content .page1 .slogan-box .down-box {
   z-index: 20;
   text-align: center;
-  margin-top: 32px;
+  top: 100px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,6 +458,7 @@ body .load_modal .logo {
 }
 
 .container .main-content .page2 .scroller .sub-videos {
+  width: 189px;
   display: inline-block;
 }
 
@@ -575,12 +570,10 @@ body .load_modal .logo {
   background-color: #000;
   color: #ffffff;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .container .footer .footer-logo {
-  -webkit-animation: logo_anim 0.8s both 1s;
-          animation: logo_anim 0.8s both 1s;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
@@ -654,8 +647,6 @@ body .load_modal .logo {
   }
   .container #nav .logo {
     cursor: pointer;
-    -webkit-animation: logo_anim 0.8s both 1s;
-            animation: logo_anim 0.8s both 1s;
     margin: 20px 0px;
     height: 20px;
   }
@@ -747,8 +738,6 @@ body .load_modal .logo {
   }
   .container .main-content .page1-moblie .slogan-box .slogan {
     text-align: center;
-    -webkit-animation: slogan_anim 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both 1.2s;
-            animation: slogan_anim 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both 1.2s;
   }
   .container .main-content .page1-moblie .slogan-box .slogan img {
     height: 70px;
@@ -756,7 +745,7 @@ body .load_modal .logo {
   .container .main-content .page1-moblie .slogan-box .down-box {
     z-index: 20;
     text-align: center;
-    margin-top: 32px;
+    margin-top: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -900,7 +889,7 @@ body .load_modal .logo {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1150px) {
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -932,8 +921,6 @@ body .load_modal .logo {
   }
   .container #nav .logo {
     cursor: pointer;
-    -webkit-animation: logo_anim 0.8s both 1s;
-            animation: logo_anim 0.8s both 1s;
     margin: 20px 0px;
     height: 20px;
   }
@@ -1012,17 +999,14 @@ body .load_modal .logo {
   .container .main-content .page1 .slogan-box {
     margin: 0px 20px;
   }
-  .container .main-content .page1 .slogan-box .slogan {
-    -webkit-animation: slogan_anim 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both 1.2s;
-            animation: slogan_anim 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both 1.2s;
-  }
   .container .main-content .page1 .slogan-box .slogan img {
     height: 108px;
   }
   .container .main-content .page1 .slogan-box .down-box {
     z-index: 20;
     text-align: center;
-    margin-top: 32px;
+    top: 100px;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1171,8 +1155,6 @@ body .load_modal .logo {
     font-size: 15px;
   }
   .container .footer .footer-logo {
-    -webkit-animation: logo_anim 0.8s both 1s;
-            animation: logo_anim 0.8s both 1s;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
