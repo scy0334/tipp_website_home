@@ -111,8 +111,10 @@ $(document).ready(function () {
         var offset
         if($(window).width() > 767) {
             $('.page1-moblie').show()
+            $('.page1').hide()
             offset = $(".page1-moblie").offset();
         }else if($(window).width() < 767){
+            $('.page1-moblie').hide()
             $('.page1').show()
             offset = $(".page1").offset();
         }
