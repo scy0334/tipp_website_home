@@ -166,6 +166,7 @@ body{
         justify-content: center;
         .logo{
             display: flex;
+            align-items: center;
             justify-content: center;
             position: absolute;
             animation: start_modal_logo 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -424,7 +425,6 @@ body{
         }
     }
 
-
     .container{
         flex-direction: column;
         min-height: 100vh;
@@ -498,6 +498,7 @@ body{
                         }
                         .video-slogan{
                             display:flex;
+                            width: 30px;
                             align-items: center;
                             font-size: 15px;
                             font-weight: 400;
