@@ -84,6 +84,11 @@ $(document).ready(function () {
     $('#terms-of-use').click(()=>{
         $('.page4').hide()
         $('.footer').hide()
+        if($(window).width() > 767) {
+            $('.page1-moblie').hide()
+        }else if($(window).width() < 767){
+            $('.page1').hide()
+        }
         $('.page3').show()
         var offset = $("#terms").offset();
         $('html, body').animate({scrollTop : offset.top}, 400);
@@ -92,13 +97,25 @@ $(document).ready(function () {
     $('#privacy-policy').click(()=>{
         $('.page3').hide()
         $('.footer').hide()
+        if($(window).width() > 767) {
+            $('.page1-moblie').hide()
+        }else if($(window).width() < 767){
+            $('.page1').hide()
+        }
         $('.page4').show()
         var offset = $("#privacy").offset();
         $('html, body').animate({scrollTop : offset.top}, 400);
     })
 
     $('#home').click(()=>{
-        var offset = $(".page1").offset();
+        var offset
+        if($(window).width() > 767) {
+            $('.page1-moblie').show()
+            offset = $(".page1-moblie").offset();
+        }else if($(window).width() < 767){
+            $('.page1').show()
+            offset = $(".page1").offset();
+        }
         $('html, body').animate({scrollTop : offset.top}, {duration:400, complete: ()=>{
             $('.page3').hide()
             $('.page4').hide()
