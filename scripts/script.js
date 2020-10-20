@@ -118,7 +118,7 @@ $(document).ready(function () {
             $('.page1').hide()
             offset = $(".page1-moblie").offset();
         }
-        $('html, body').animate({scrollTop : offset.top}, {duration:400, complete: ()=>{
+        $('html, body').animate({scrollTop : 0}, {duration:400, complete: ()=>{
             $('.page3').hide()
             $('.page4').hide()
             $('.footer').show()
