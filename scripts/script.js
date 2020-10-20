@@ -110,13 +110,13 @@ $(document).ready(function () {
     $('#home').click(()=>{
         var offset
         if($(window).width() > 767) {
-            $('.page1-moblie').show()
-            $('.page1').hide()
-            offset = $(".page1-moblie").offset();
-        }else if($(window).width() < 767){
             $('.page1-moblie').hide()
             $('.page1').show()
             offset = $(".page1").offset();
+        }else if($(window).width() < 767){
+            $('.page1-moblie').show()
+            $('.page1').hide()
+            offset = $(".page1-moblie").offset();
         }
         $('html, body').animate({scrollTop : offset.top}, {duration:400, complete: ()=>{
             $('.page3').hide()
