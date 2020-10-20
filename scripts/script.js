@@ -124,6 +124,25 @@ $(document).ready(function () {
             $('.footer').show()
         }});
     })
+
+    $('.close').click(()=>{
+        var offset
+        if($(window).width() > 767) {
+            $('.page1-moblie').hide()
+            $('.page1').show()
+            offset = $(".page1").offset();
+        }else if($(window).width() < 767){
+            $('.page1-moblie').show()
+            $('.page1').hide()
+            offset = $(".page1-moblie").offset();
+        }
+        $('html, body').animate({scrollTop : 0}, {duration:400, complete: ()=>{
+            $('.page3').hide()
+            $('.page4').hide()
+            $('.footer').show()
+        }});
+    })
+
     $('.page3').hide()
     $('.page4').hide()
     $(window).resize(()=>{
