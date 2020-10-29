@@ -96,15 +96,13 @@
 @keyframes start_modal_logo{
     0% {
         transform: translateY(0);
-        transform: scaleX(0.4);
         opacity: 0;
-      }
-    30%{
+    }
+    30% {
         opacity: 1;
     }
-    80% {
+    80%{
         transform: translateY(0px);
-        transform: scaleX(1);
     }
     100% {
         transform: translateY(-500px);
@@ -149,6 +147,9 @@ body{
         z-index: -100;
         position: relative;
         box-shadow: 0px 5px 10px 5px #b4b4b4;
+        border-radius: 26px;
+        border: 8px solid #000;
+        box-sizing: border-box;
     }
     .load_modal{
         display: none; /* Hidden by default */
@@ -193,7 +194,7 @@ body{
             cursor: pointer;
             //animation: logo_anim 0.8s both 1s;
             margin: 20px 0px;
-            height: 20px;
+            height: 28px;
             img{
                 height: 100%;
             }
@@ -212,8 +213,9 @@ body{
             padding: 0px 15px;
             img{
                 cursor: pointer;
-                height: 24px;
+                height: 18px;
                 margin-right: 5px;
+                margin-left: -4px;
             }
         }
     }
@@ -227,7 +229,7 @@ body{
         width: 100%;
         .page1{
             width: 100vw;
-            height: 87vh;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -236,17 +238,8 @@ body{
                 .main-videos{
                     .main-video{
                         z-index: -99;
-                        width: 189px;
-                        height: 336px;
                         display: inline-block;
                         border: 8px solid transparent;
-                    }
-                    .video-border{
-                        border-radius: 18px;
-                        border: 8px solid #000;
-                        width: 189px;
-                        height: 336px;
-                        position: absolute;
                     }
                 }
             }
@@ -261,18 +254,20 @@ body{
                 }
                 .down-box{
                     z-index: 20;
-                    text-align: center;
-                    top: 100px;
-                    position: relative;
+                    width: 100%;
+                    top: 65%;
+                    left: 0;
+                    position: absolute;
                     display: flex;
-                    padding: 0px 45px;
-                    justify-content: space-between;
+                    margin: 0 auto;
+                    justify-content: center;
                     img{
                         height: 42px;
                     }
                     .down{
                         display: inline-block;
                         cursor: pointer;
+                        margin: 0px 12px;
                     }
                 }
             }
@@ -281,6 +276,7 @@ body{
                 align-items: center;
                 font-size: 21px;
                 font-weight: 400;
+                word-break: keep-all;
                 .left-text{
                     margin: 0px 8px 0px 15px;
                 }
@@ -294,6 +290,7 @@ body{
         }
 
         .page2{
+            display: none;
             z-index: -1;
             width: 100%;
             max-height: 100px;
@@ -308,13 +305,6 @@ body{
                         height: 360px;
                         border: 8px solid transparent;
                     }
-                    .video-border{
-                        border-radius: 18px;
-                        border: 8px solid #000;
-                        width: 189px;
-                        height: 336px;
-                        position: absolute;
-                    }
                 }
             }
         }
@@ -323,7 +313,7 @@ body{
             z-index: 100;
             display: flex;
             position: fixed;
-            animation: pageon 1s linear;
+            animation: pageon 0.3s linear;
             top: 0;
             justify-content: center;
             align-items: center;
@@ -345,6 +335,7 @@ body{
                     margin-bottom: 20px;
                     .close{
                         width: 24px;
+                        margin-bottom: 28px;
                         cursor: pointer;
                     }
                 }
@@ -359,7 +350,7 @@ body{
             z-index: 100;
             display: flex;
             position: fixed;
-            animation: pageon 1s linear;
+            animation: pageon 0.3s linear;
             top: 0;
             justify-content: center;
             align-items: center;
@@ -376,11 +367,12 @@ body{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    font-size: 38px;
+                    font-size: 34px;
                     font-weight: 700;
                     margin-bottom: 20px;
                     .close{
                         width: 24px;
+                        margin-bottom: 28px;
                         cursor: pointer;
                     }
                 }
@@ -432,7 +424,7 @@ body{
 }
 
 //모바일 스크린
-@media (min-width: 280px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
     .load_modal{
         img{
             width: 50%;
@@ -459,7 +451,7 @@ body{
                 cursor: pointer;
                 //animation: logo_anim 0.8s both 1s;
                 margin: 20px 0px;
-                height: 20px;
+                height: 28px;
                 img{
                     height: 100%;
                 }
@@ -478,16 +470,12 @@ body{
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                margin-top: 110px;
+                margin-top: 45px;
                 .video-container{
                     display: flex;
+                    justify-content: center;
                     width: 100%;
-                    #right-video{
-                        .main-videos{
-                            position: relative;
-                            left: 10%;
-                        }
-                    }
+                    position: relative;
                     #left-video{
                         .main-videos{
                             position: relative;
@@ -495,66 +483,51 @@ body{
                         }
                     }
                     .video-box{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
+                        width: 100%;
                         .main-videos{
+                            width: 100%;
+                            height: 100%;
+                            position: unset !important;
+                            right: 0% !important;
                             .main-video{
                                 z-index: -99;
-                                display: inline-block;
+                                height: 100%;
                                 video{
-                                    border: 7px solid #000;
-                                    border-radius: 12px;
+                                    border: 0px solid #000;
+                                    border-radius: 0px;
                                     box-shadow: none;
+                                    height: 100%;
+                                    object-fit: cover;
                                 }
                             }
                         }
-                        .video-slogan{
-                            display:flex;
-                            width: 30px;
-                            align-items: center;
-                            font-size: 15px;
-                            font-weight: 400;
-                            .left-text{
-                                margin: 0px 6px 0px -40px;
-                            }
-                            .right-text{
-                                margin: 0px -40px 0px 6px;
-                            }
+                    }
+                    .slogan-box{
+                        position: absolute;
+                        bottom: 10%;
+                        .slogan{
+                            text-align: center;
                             img{
-                                height: 10px;
+                                width: 80%;
                             }
                         }
-                    }
-                }
-    
-                .slogan-box{
-                    margin:36px 100px 50px 100px;
-                    .slogan{
-                        text-align: center;
-                        //animation: slogan_anim 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both 1.2s;
-                        img{
-                            height: 70px;
-                        }
-                    }
-                    .down-box{
-                        z-index: 20;
-                        text-align: center;
-                        margin-top: 24px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        img{
-                            height: 48px;
-                        }
-                        .down{
-                            display: inline-block;
-                            cursor: pointer;
-                        }
-
-                        .appstore{
-                            margin-bottom: 10px;
+                        .down-box{
+                            z-index: 20;
+                            text-align: center;
+                            margin-top: 15px;
+                            display: flex;
+                            justify-content: space-evenly;
+                            >img{
+                                width: 80%;
+                                cursor: pointer;
+                            }
+                            .down{
+                                display: flex;
+                                flex: 0 1 auto;
+                                img{
+                                    height: 40px;
+                                }
+                            }
                         }
                     }
                 }
@@ -567,7 +540,7 @@ body{
                 z-index: 100;
                 display: flex;
                 position: fixed;
-                animation: pageon 1s linear;
+                animation: pageon 0.3s linear;
                 top: 14px !important;
                 justify-content: center;
                 align-items: center;
@@ -580,6 +553,7 @@ body{
                         font-size: 18px;
                         .close{
                             width: 15px;
+                            margin-bottom: 0px;
                         }
                     }
                 }
@@ -589,7 +563,7 @@ body{
                 z-index: 100;
                 display: flex;
                 position: fixed;
-                animation: pageon 1s linear;
+                animation: pageon 0.3s linear;
                 top: 14px !important;
                 justify-content: center;
                 align-items: center;
@@ -602,6 +576,7 @@ body{
                         font-size: 16px;
                         .close{
                             width: 15px;
+                            margin-bottom: 0px;
                         }
                     }
                 }
@@ -630,8 +605,9 @@ body{
                 margin-top: 20px;
                 img{
                     cursor: pointer;
-                    height: 24px;
+                    height: 18px;
                     margin-right: 5px;
+                    margin-left: -3px;
                 }
             }
             .footer-desc-mobile{
@@ -680,7 +656,7 @@ body{
                 cursor: pointer;
                 //animation: logo_anim 0.8s both 1s;
                 margin: 20px 0px;
-                height: 20px;
+                height: 28px;
                 img{
                     height: 100%;
                 }
@@ -699,8 +675,9 @@ body{
                 padding: 0px 15px;
                 img{
                     cursor: pointer;
-                    height: 24px;
+                    height: 18px;
                     margin-right: 5px;
+                    margin-left: -4px;
                 }
             }
         }
@@ -714,7 +691,7 @@ body{
             width: 100%;
             .page1{
                 width: 100vw;
-                height: 87vh;
+                height: 100vh;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -728,13 +705,6 @@ body{
                             display: inline-block;
                             border: 8px solid transparent;
                         }
-                        .video-border{
-                            border-radius: 18px;
-                            border: 8px solid #000;
-                            width: 189px;
-                            height: 336px;
-                            position: absolute;
-                        }
                     }
                 }
     
@@ -743,17 +713,18 @@ body{
                     .slogan{
                         //animation: slogan_anim 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both 1.2s;
                         img{
-                            height: 108px;
+                            height: 84px;
                         }
                     }
                     .down-box{
                         z-index: 20;
-                        text-align: center;
-                        top: 100px;
-                        position: relative;
+                        width: 100%;
+                        top: 60%;
+                        left: 0;
+                        position: absolute;
                         display: flex;
-                        padding: 0px 45px;
-                        justify-content: space-between;
+                        margin: 0 auto;
+                        justify-content: center;
                         img{
                             height: 42px;
                         }
@@ -768,15 +739,14 @@ body{
                     align-items: center;
                     font-size: 21px;
                     font-weight: 400;
+                    word-break: keep-all;
                     .left-text{
-                        margin: 0px 8px 0px 15px;
+                        margin: 0px 8px 0px 8px;
                         font-size: 14px;
-                        width: 50px;
                     }
                     .right-text{
-                        margin: 0px 15px 0px 8px;
+                        margin: 0px 8px 0px 8px;
                         font-size: 14px;
-                        width: 50px;
                     }
                     img{
                         height: 12px;
@@ -785,6 +755,7 @@ body{
             }
     
             .page2{
+                display:none;
                 z-index: -1;
                 width: 100%;
                 max-height: 100px;
@@ -798,13 +769,6 @@ body{
                             height: 360px;
                             border: 8px solid transparent;
                         }
-                        .video-border{
-                            border-radius: 18px;
-                            border: 8px solid #000;
-                            width: 189px;
-                            height: 336px;
-                            position: absolute;
-                        }
                     }
                 }
             }
@@ -813,7 +777,7 @@ body{
                 z-index: 100;
                 display: flex;
                 position: fixed;
-                animation: pageon 1s linear;
+                animation: pageon 0.3s linear;
                 top: 0;
                 justify-content: center;
                 align-items: center;
@@ -842,7 +806,7 @@ body{
                 z-index: 100;
                 display: flex;
                 position: fixed;
-                animation: pageon 1s linear;
+                animation: pageon 0.3s linear;
                 top: 0;
                 justify-content: center;
                 align-items: center;

@@ -138,8 +138,6 @@
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    -webkit-transform: scaleX(0.4);
-            transform: scaleX(0.4);
     opacity: 0;
   }
   30% {
@@ -148,8 +146,6 @@
   80% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
   }
   100% {
     -webkit-transform: translateY(-500px);
@@ -161,8 +157,6 @@
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    -webkit-transform: scaleX(0.4);
-            transform: scaleX(0.4);
     opacity: 0;
   }
   30% {
@@ -171,8 +165,6 @@
   80% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
   }
   100% {
     -webkit-transform: translateY(-500px);
@@ -237,6 +229,10 @@ body video {
   position: relative;
   -webkit-box-shadow: 0px 5px 10px 5px #b4b4b4;
           box-shadow: 0px 5px 10px 5px #b4b4b4;
+  border-radius: 26px;
+  border: 8px solid #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body .load_modal {
@@ -316,7 +312,7 @@ body .load_modal .logo {
 .container #nav .logo {
   cursor: pointer;
   margin: 20px 0px;
-  height: 20px;
+  height: 28px;
 }
 
 .container #nav .logo img {
@@ -343,8 +339,9 @@ body .load_modal .logo {
 
 .container #nav .contact img {
   cursor: pointer;
-  height: 24px;
+  height: 18px;
   margin-right: 5px;
+  margin-left: -4px;
 }
 
 .container .main-content {
@@ -365,7 +362,7 @@ body .load_modal .logo {
 
 .container .main-content .page1 {
   width: 100vw;
-  height: 87vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,18 +382,8 @@ body .load_modal .logo {
 
 .container .main-content .page1 .video-box .main-videos .main-video {
   z-index: -99;
-  width: 189px;
-  height: 336px;
   display: inline-block;
   border: 8px solid transparent;
-}
-
-.container .main-content .page1 .video-box .main-videos .video-border {
-  border-radius: 18px;
-  border: 8px solid #000;
-  width: 189px;
-  height: 336px;
-  position: absolute;
 }
 
 .container .main-content .page1 .slogan-box {
@@ -409,16 +396,17 @@ body .load_modal .logo {
 
 .container .main-content .page1 .slogan-box .down-box {
   z-index: 20;
-  text-align: center;
-  top: 100px;
-  position: relative;
+  width: 100%;
+  top: 65%;
+  left: 0;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px 45px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container .main-content .page1 .slogan-box .down-box img {
@@ -428,6 +416,7 @@ body .load_modal .logo {
 .container .main-content .page1 .slogan-box .down-box .down {
   display: inline-block;
   cursor: pointer;
+  margin: 0px 12px;
 }
 
 .container .main-content .page1 .video-slogan {
@@ -439,6 +428,7 @@ body .load_modal .logo {
           align-items: center;
   font-size: 21px;
   font-weight: 400;
+  word-break: keep-all;
 }
 
 .container .main-content .page1 .video-slogan .left-text {
@@ -454,6 +444,7 @@ body .load_modal .logo {
 }
 
 .container .main-content .page2 {
+  display: none;
   z-index: -1;
   width: 100%;
   max-height: 100px;
@@ -472,22 +463,14 @@ body .load_modal .logo {
   border: 8px solid transparent;
 }
 
-.container .main-content .page2 .scroller .sub-videos .video-border {
-  border-radius: 18px;
-  border: 8px solid #000;
-  width: 189px;
-  height: 336px;
-  position: absolute;
-}
-
 .container .main-content .page3 {
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  -webkit-animation: pageon 1s linear;
-          animation: pageon 1s linear;
+  -webkit-animation: pageon 0.3s linear;
+          animation: pageon 0.3s linear;
   top: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -526,6 +509,7 @@ body .load_modal .logo {
 
 .container .main-content .page3 .terms-container .subject .close {
   width: 24px;
+  margin-bottom: 28px;
   cursor: pointer;
 }
 
@@ -540,8 +524,8 @@ body .load_modal .logo {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  -webkit-animation: pageon 1s linear;
-          animation: pageon 1s linear;
+  -webkit-animation: pageon 0.3s linear;
+          animation: pageon 0.3s linear;
   top: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -573,13 +557,14 @@ body .load_modal .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 38px;
+  font-size: 34px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
 .container .main-content .page4 .privacy-policy-container .subject .close {
   width: 24px;
+  margin-bottom: 28px;
   cursor: pointer;
 }
 
@@ -643,7 +628,7 @@ body .load_modal .logo {
   margin-right: 30px;
 }
 
-@media (min-width: 280px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .load_modal img {
     width: 50%;
   }
@@ -679,7 +664,7 @@ body .load_modal .logo {
   .container #nav .logo {
     cursor: pointer;
     margin: 20px 0px;
-    height: 20px;
+    height: 28px;
   }
   .container #nav .logo img {
     height: 100%;
@@ -704,100 +689,79 @@ body .load_modal .logo {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 110px;
+    margin-top: 45px;
   }
   .container .main-content .page1-moblie .video-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
-  }
-  .container .main-content .page1-moblie .video-container #right-video .main-videos {
     position: relative;
-    left: 10%;
   }
   .container .main-content .page1-moblie .video-container #left-video .main-videos {
     position: relative;
     right: 10%;
   }
   .container .main-content .page1-moblie .video-container .video-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 100%;
+  }
+  .container .main-content .page1-moblie .video-container .video-box .main-videos {
+    width: 100%;
+    height: 100%;
+    position: unset !important;
+    right: 0% !important;
   }
   .container .main-content .page1-moblie .video-container .video-box .main-videos .main-video {
     z-index: -99;
-    display: inline-block;
+    height: 100%;
   }
   .container .main-content .page1-moblie .video-container .video-box .main-videos .main-video video {
-    border: 7px solid #000;
-    border-radius: 12px;
+    border: 0px solid #000;
+    border-radius: 0px;
     -webkit-box-shadow: none;
             box-shadow: none;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-  .container .main-content .page1-moblie .video-container .video-box .video-slogan {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 15px;
-    font-weight: 400;
+  .container .main-content .page1-moblie .video-container .slogan-box {
+    position: absolute;
+    bottom: 10%;
   }
-  .container .main-content .page1-moblie .video-container .video-box .video-slogan .left-text {
-    margin: 0px 6px 0px -40px;
-  }
-  .container .main-content .page1-moblie .video-container .video-box .video-slogan .right-text {
-    margin: 0px -40px 0px 6px;
-  }
-  .container .main-content .page1-moblie .video-container .video-box .video-slogan img {
-    height: 10px;
-  }
-  .container .main-content .page1-moblie .slogan-box {
-    margin: 36px 100px 50px 100px;
-  }
-  .container .main-content .page1-moblie .slogan-box .slogan {
+  .container .main-content .page1-moblie .video-container .slogan-box .slogan {
     text-align: center;
   }
-  .container .main-content .page1-moblie .slogan-box .slogan img {
-    height: 70px;
+  .container .main-content .page1-moblie .video-container .slogan-box .slogan img {
+    width: 80%;
   }
-  .container .main-content .page1-moblie .slogan-box .down-box {
+  .container .main-content .page1-moblie .video-container .slogan-box .down-box {
     z-index: 20;
     text-align: center;
-    margin-top: 24px;
+    margin-top: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-  .container .main-content .page1-moblie .slogan-box .down-box img {
-    height: 48px;
-  }
-  .container .main-content .page1-moblie .slogan-box .down-box .down {
-    display: inline-block;
+  .container .main-content .page1-moblie .video-container .slogan-box .down-box > img {
+    width: 80%;
     cursor: pointer;
   }
-  .container .main-content .page1-moblie .slogan-box .down-box .appstore {
-    margin-bottom: 10px;
+  .container .main-content .page1-moblie .video-container .slogan-box .down-box .down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+  .container .main-content .page1-moblie .video-container .slogan-box .down-box .down img {
+    height: 40px;
   }
   .container .main-content .page2 {
     display: none;
@@ -808,8 +772,8 @@ body .load_modal .logo {
     display: -ms-flexbox;
     display: flex;
     position: fixed;
-    -webkit-animation: pageon 1s linear;
-            animation: pageon 1s linear;
+    -webkit-animation: pageon 0.3s linear;
+            animation: pageon 0.3s linear;
     top: 14px !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -829,6 +793,7 @@ body .load_modal .logo {
   }
   .container .main-content .page3 #terms .subject .close {
     width: 15px;
+    margin-bottom: 0px;
   }
   .container .main-content .page4 {
     z-index: 100;
@@ -836,8 +801,8 @@ body .load_modal .logo {
     display: -ms-flexbox;
     display: flex;
     position: fixed;
-    -webkit-animation: pageon 1s linear;
-            animation: pageon 1s linear;
+    -webkit-animation: pageon 0.3s linear;
+            animation: pageon 0.3s linear;
     top: 14px !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -857,6 +822,7 @@ body .load_modal .logo {
   }
   .container .main-content .page4 #privacy .subject .close {
     width: 15px;
+    margin-bottom: 0px;
   }
   .container .footer {
     display: -webkit-box;
@@ -893,8 +859,9 @@ body .load_modal .logo {
   }
   .container .footer .contact-mobile img {
     cursor: pointer;
-    height: 24px;
+    height: 18px;
     margin-right: 5px;
+    margin-left: -3px;
   }
   .container .footer .footer-desc-mobile {
     text-align: center;
@@ -960,7 +927,7 @@ body .load_modal .logo {
   .container #nav .logo {
     cursor: pointer;
     margin: 20px 0px;
-    height: 20px;
+    height: 28px;
   }
   .container #nav .logo img {
     height: 100%;
@@ -984,8 +951,9 @@ body .load_modal .logo {
   }
   .container #nav .contact img {
     cursor: pointer;
-    height: 24px;
+    height: 18px;
     margin-right: 5px;
+    margin-left: -4px;
   }
   .container .main-content {
     display: -webkit-box;
@@ -1004,7 +972,7 @@ body .load_modal .logo {
   }
   .container .main-content .page1 {
     width: 100vw;
-    height: 87vh;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1027,31 +995,25 @@ body .load_modal .logo {
     display: inline-block;
     border: 8px solid transparent;
   }
-  .container .main-content .page1 .video-box .main-videos .video-border {
-    border-radius: 18px;
-    border: 8px solid #000;
-    width: 189px;
-    height: 336px;
-    position: absolute;
-  }
   .container .main-content .page1 .slogan-box {
     margin: 0px 20px;
   }
   .container .main-content .page1 .slogan-box .slogan img {
-    height: 108px;
+    height: 84px;
   }
   .container .main-content .page1 .slogan-box .down-box {
     z-index: 20;
-    text-align: center;
-    top: 100px;
-    position: relative;
+    width: 100%;
+    top: 60%;
+    left: 0;
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0px 45px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .container .main-content .page1 .slogan-box .down-box img {
     height: 42px;
@@ -1069,21 +1031,21 @@ body .load_modal .logo {
             align-items: center;
     font-size: 21px;
     font-weight: 400;
+    word-break: keep-all;
   }
   .container .main-content .page1 .video-slogan .left-text {
-    margin: 0px 8px 0px 15px;
+    margin: 0px 8px 0px 8px;
     font-size: 14px;
-    width: 50px;
   }
   .container .main-content .page1 .video-slogan .right-text {
-    margin: 0px 15px 0px 8px;
+    margin: 0px 8px 0px 8px;
     font-size: 14px;
-    width: 50px;
   }
   .container .main-content .page1 .video-slogan img {
     height: 12px;
   }
   .container .main-content .page2 {
+    display: none;
     z-index: -1;
     width: 100%;
     max-height: 100px;
@@ -1098,21 +1060,14 @@ body .load_modal .logo {
     height: 360px;
     border: 8px solid transparent;
   }
-  .container .main-content .page2 .scroller .sub-videos .video-border {
-    border-radius: 18px;
-    border: 8px solid #000;
-    width: 189px;
-    height: 336px;
-    position: absolute;
-  }
   .container .main-content .page3 {
     z-index: 100;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: fixed;
-    -webkit-animation: pageon 1s linear;
-            animation: pageon 1s linear;
+    -webkit-animation: pageon 0.3s linear;
+            animation: pageon 0.3s linear;
     top: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1147,8 +1102,8 @@ body .load_modal .logo {
     display: -ms-flexbox;
     display: flex;
     position: fixed;
-    -webkit-animation: pageon 1s linear;
-            animation: pageon 1s linear;
+    -webkit-animation: pageon 0.3s linear;
+            animation: pageon 0.3s linear;
     top: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
