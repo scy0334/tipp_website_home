@@ -1,3 +1,9 @@
+$(window).on('load',function(){
+    setTimeout(() => {
+        $(".load_modal").css('display','none');
+    }, 3000);
+})
+
 $(document).ready(function () {
     // $(".owl-carousel").owlCarousel({
     //     loop:true,
@@ -47,7 +53,6 @@ $(document).ready(function () {
     // }).trigger("play.owl.autoplay");
 
     $("#contact_bt").click(()=>{
-        console.log("fdasf")
             var text = "contact@tippcorp.com"
             var elem = document.createElement("textarea");
             document.body.appendChild(elem);
@@ -59,7 +64,6 @@ $(document).ready(function () {
     })
 
     $("#contact_bt2").click(()=>{
-        console.log("fdasf")
             var text = "contact@tippcorp.com"
             var elem = document.createElement("textarea");
             document.body.appendChild(elem);
@@ -155,8 +159,3 @@ $(document).ready(function () {
     }
 })
 
-window.onload=function(){
-    setTimeout(() => {
-        $(".load_modal").css('display','none');
-    }, 1000);
-}
