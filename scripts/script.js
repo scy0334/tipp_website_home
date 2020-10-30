@@ -22,10 +22,22 @@ function log(text){
 $(document).ready(function () {
     log('step1');
     for(i=0; i<$('video').length; i++){
-        log('step2');
         $($('video')[i]).on('canplaythrough',(e)=>{
+            log('step2');
             videoloaded($('video').length)
         })
+
+        $($('video')[i]).on('error',(e)=>{
+            log('error[v] : '+e.target.error)
+            console.log(e.target.error);
+        })
+
+        $($('source:last-child')[i]).on('error',(e)=>{
+            log('error[s] : '+e.target.parentNode.error)
+            log('error[s2] : '+e.target.parentNode.networkState)
+        })
+
+
         $('video')[i].play()
     }
     // $(".owl-carousel").owlCarousel({
