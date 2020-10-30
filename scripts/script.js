@@ -1,19 +1,28 @@
 let played = 0;
 function videoloaded(m){
+    log('step3');
     if(played >= m-1){
-        console.log('load!')
+        log('step4-2');
+
         $(".load_modal").css('animation-play-state','running');
         $(".load_modal").find('.logo').css('animation-play-state','running')
         setTimeout(() => {
             $(".load_modal").css('display','none');
         }, 1000);
     }else{
+        log('step4-1');
         played++
     }
 }
 
+function log(text){
+    $("#log").text( $("#log").text() + "\n" + text)
+}
+
 $(document).ready(function () {
+    log('step1');
     for(i=0; i<$('video').length; i++){
+        log('step2');
         $($('video')[i]).on('canplaythrough',(e)=>{
             videoloaded($('video').length)
         })
