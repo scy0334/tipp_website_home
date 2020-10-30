@@ -1,54 +1,51 @@
 $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
-        loop:true,
-        margin:220,
-        autoHeight:true,
-        //stagePadding: -80,
-        autoplay: true,
-        slideTransition: 'linear',
-        autoplaySpeed: 9000,
-        smartSpeed: 9000,
-        autoplayHoverPause: false,
-        nav:false,
-        responsiveClass:true,
-        responsiveBaseElement:'.page2',
-        responsive:{
-            0:{
-                items:7
-            },
-            450:{
-                items:7,
-            },
-            700:{
-                margin:-100,
-                itmes:7,
-            },
-            900:{
-                margin:230,
-                items:7,
-            },
-            1100:{
-                margin:240,
-                items:7,
-            },
-            1200:{
-                margin:220,
-                items:7,
-            },
-            1300:{
-                margin:200,
-                items:7,
-            },
-            1400:{
-                margin:200,
-                items:7
-            }
-        }
-    }).trigger("play.owl.autoplay");
+    // $(".owl-carousel").owlCarousel({
+    //     loop:true,
+    //     margin:220,
+    //     autoHeight:true,
+    //     //stagePadding: -80,
+    //     autoplay: true,
+    //     slideTransition: 'linear',
+    //     autoplaySpeed: 9000,
+    //     smartSpeed: 9000,
+    //     autoplayHoverPause: false,
+    //     nav:false,
+    //     responsiveClass:true,
+    //     responsiveBaseElement:'.page2',
+    //     responsive:{
+    //         0:{
+    //             items:7
+    //         },
+    //         450:{
+    //             items:7,
+    //         },
+    //         700:{
+    //             margin:-100,
+    //             itmes:7,
+    //         },
+    //         900:{
+    //             margin:230,
+    //             items:7,
+    //         },
+    //         1100:{
+    //             margin:240,
+    //             items:7,
+    //         },
+    //         1200:{
+    //             margin:220,
+    //             items:7,
+    //         },
+    //         1300:{
+    //             margin:200,
+    //             items:7,
+    //         },
+    //         1400:{
+    //             margin:200,
+    //             items:7
+    //         }
+    //     }
+    // }).trigger("play.owl.autoplay");
 
-    $(".owl-carousel").on('onPlayVideo',function (e){
-
-    })
     $("#contact_bt").click(()=>{
         console.log("fdasf")
             var text = "contact@tippcorp.com"
@@ -84,11 +81,8 @@ $(document).ready(function () {
     $('#terms-of-use').click(()=>{
         $('.page4').hide()
         $('.footer').hide()
-        if($(window).width() > 767) {
-            $('.page1-moblie').hide()
-        }else if($(window).width() < 767){
-            $('.page1').hide()
-        }
+        $('.page1-moblie').hide()
+        $('.page1').hide()
         $('.page3').show()
         var offset = $("#terms").offset();
         $('html, body').animate({scrollTop : offset.top}, 400);
@@ -97,11 +91,8 @@ $(document).ready(function () {
     $('#privacy-policy').click(()=>{
         $('.page3').hide()
         $('.footer').hide()
-        if($(window).width() > 767) {
-            $('.page1-moblie').hide()
-        }else if($(window).width() < 767){
-            $('.page1').hide()
-        }
+        $('.page1-moblie').hide()
+        $('.page1').hide()
         $('.page4').show()
         var offset = $("#privacy").offset();
         $('html, body').animate({scrollTop : offset.top}, 400);
@@ -162,9 +153,10 @@ $(document).ready(function () {
         $('.page1-moblie,.footer-desc-mobile,.contact-mobile').show()
         $('.page1,.footer-desc').hide()
     }
-
 })
 
-setTimeout(() => {
-    $(".load_modal").css('display','none');
-}, 1000);
+window.onload=function(){
+    setTimeout(() => {
+        $(".load_modal").css('display','none');
+    }, 1000);
+}
