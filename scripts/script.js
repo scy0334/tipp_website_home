@@ -5,8 +5,7 @@ $(window).on('load',function(){
     
     setTimeout(() => {
         $(".load_modal").css('display','none');
-    }, 1000);
-    
+    }, 2000);
 })
 
 $(document).ready(function () {
