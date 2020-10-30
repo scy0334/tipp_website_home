@@ -1,14 +1,24 @@
-$(window).on('load',function(){
-    for(i=0; i<$('video').length; i++){
-        $('video')[i].play()
+let played = 0;
+function videoloaded(m){
+    if(played >= m-1){
+        console.log('load!')
+        $(".load_modal").css('animation','start_modal 0.5s linear both 0.6s');
+        $(".load_modal").find('.logo').css('animation','start_modal_logo 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both')
+        setTimeout(() => {
+            $(".load_modal").css('display','none');
+        }, 2000);
+    }else{
+        played++
     }
-    
-    setTimeout(() => {
-        $(".load_modal").css('display','none');
-    }, 2000);
-})
+}
 
 $(document).ready(function () {
+    for(i=0; i<$('video').length; i++){
+        $($('video')[i]).on('loadeddata',(e)=>{
+            videoloaded($('video').length)
+        })
+        $('video')[i].play()
+    }
     // $(".owl-carousel").owlCarousel({
     //     loop:true,
     //     margin:220,
