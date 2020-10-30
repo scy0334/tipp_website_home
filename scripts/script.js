@@ -1,42 +1,21 @@
 let played = 0;
 function videoloaded(m){
-    log('step3');
     if(played >= m-1){
-        log('step4-2');
-
         $(".load_modal").css('animation-play-state','running');
         $(".load_modal").find('.logo').css('animation-play-state','running')
         setTimeout(() => {
             $(".load_modal").css('display','none');
         }, 1000);
     }else{
-        log('step4-1');
         played++
     }
 }
 
-function log(text){
-    $("#log").text( $("#log").text() + "\n" + text)
-}
-
 $(document).ready(function () {
-    log('step1');
     for(i=0; i<$('video').length; i++){
         $($('video')[i]).on('canplaythrough',(e)=>{
-            log('step2');
             videoloaded($('video').length)
         })
-
-        $($('video')[i]).on('error',(e)=>{
-            log('error[v] : '+e.target.error)
-            console.log(e.target.error);
-        })
-
-        $($('source:last-child')[i]).on('error',(e)=>{
-            log('error[s] : '+e.target.parentNode.error)
-            log('error[s2] : '+e.target.parentNode.networkState)
-        })
-
 
         $('video')[i].play()
     }
