@@ -96,7 +96,7 @@
 @keyframes start_modal_logo{
     0% {
         transform: translateY(0);
-        opacity: 0.7;
+        opacity: 1;
     }
     30% {
         opacity: 1;
@@ -155,6 +155,7 @@ body{
         height: 100%; /* Full height */
         overflow: auto; /* Enable scroll if needed */
         animation: start_modal 0.5s linear both 0.6s;
+        animation-play-state:paused;
         background-color: #FAFF2C;
         z-index: 10;
         display: flex;
@@ -166,6 +167,7 @@ body{
             justify-content: center;
             position: absolute;
             animation: start_modal_logo 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-play-state:paused;
         }
     }
 }
@@ -312,7 +314,7 @@ body{
             top: 0;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 100%;
             background-color: #fafafa;
             .terms-container{
                 padding: 30px;
@@ -349,7 +351,7 @@ body{
             top: 0;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 100%;
             background-color: #fafafa;
             .privacy-policy-container{
                 padding: 30px;
@@ -542,7 +544,7 @@ body{
                 top: 14px !important;
                 justify-content: center;
                 align-items: center;
-                height: 100vh;
+                height: 100%;
                 background-color: #fafafa;
                 #terms{
                     padding: 15px;
@@ -565,7 +567,7 @@ body{
                 top: 14px !important;
                 justify-content: center;
                 align-items: center;
-                height: 100vh;
+                height: 100%;
                 background-color: #fafafa;
                 #privacy{
                     padding: 15px;
@@ -779,7 +781,7 @@ body{
                 top: 0;
                 justify-content: center;
                 align-items: center;
-                height: 100vh;
+                height: 100%;
                 background-color: #fafafa;
                 .terms-container{
                     padding: 30px;
@@ -808,7 +810,7 @@ body{
                 top: 0;
                 justify-content: center;
                 align-items: center;
-                height: 100vh;
+                height: 100%;
                 background-color: #fafafa;
                 .privacy-policy-container{
                     padding: 30px;
