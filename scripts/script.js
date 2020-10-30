@@ -1,7 +1,12 @@
 $(window).on('load',function(){
+    for(i=0; i<$('video').length; i++){
+        $('video')[i].play()
+    }
+    
     setTimeout(() => {
         $(".load_modal").css('display','none');
-    }, 3000);
+    }, 1000);
+    
 })
 
 $(document).ready(function () {
