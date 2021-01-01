@@ -1,162 +1,188 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,viewport-fit=cover">
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/style.css?v=15">
-    <link rel="stylesheet" href="./scripts/owlcarousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- <script src="./scripts/owlcarousel/dist/owl.carousel.min.js"></script> -->
-    <script type="text/javascript" src="./scripts/script.js?v=15"></script>
-    <title>TIPP</title>
-</head>
-<body>
-    <div style="overflow: hidden;">
-        <div class="load_modal">
-            <div class="logo" style="flex-direction: column;">
-                <img src="./img/logo.png"/>
-            </div>
-        </div>
-        <div class="container">
-            <div id="nav">
-                <div class="logo" id="home">
-                    <img src="./img/logo.png"/>
-                </div>
-                <div class="contact">
-                    <img id="contact_bt" src="./img/contact_icon.png"/>
-                    <p id="copy_text">CONTACT@TIPPCORP.COM</p>
-                </div>
-            </div>
-            <div class="main-content">
-                <div class="page1">
-                    <div class="video-box" id="left-video">
-                        <div class="main-videos">
-                            <div class="main-video left">
-                                <video preload="auto" playsinline muted loop controls="false">
-                                    <source src="./videos/left_video2.mp4" type="video/mp4"> 
-                                </video>
-                            </div>
-                        </div>
-                        <div class="video-slogan">
-                            <p class="left-text">질문하고</p>
-                            <img src="./img/right_arrow.png"/>
-                        </div>
-                    </div>
-                    
-                    <div class="slogan-box">
-                        <div class="slogan">
-                            <div style="position: relative;">
-                                <img src="./img/slogan.png" />
-                                <div class="down-box">
-                                    <div class="down appstore">
-                                        <img src="./img/appstore.png" />
-                                    </div>
-                                    <div class="down playstore">
-                                        <img src="./img/playstore.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
 
-                    <div class="video-box" id="right-video">
-                        <div class="video-slogan">
-                            <img src="./img/left_arrow.png"/>
-                            <p class="right-text">답하고</p>
-                        </div>
-                        <div class="main-videos">
-                            <div class="main-video right">
-                                <video preload="auto" playsinline muted loop controls="false">
-                                    <source src="./videos/right_video2.mp4" type="video/mp4"> 
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="page1-moblie">
-                    <div class="video-container">
-                        <div class="video-box" id="left-video">
-                            <div class="main-videos">
-                                <div class="main-video left">
-                                    <video preload="auto" muted loop controls="false" playsinline>
-                                        <source src="./videos/left_video2.mp4" type="video/mp4"> 
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slogan-box">
-                            <div class="slogan">
-                                <img src="./img/slogan_mobile.png" />
-                            </div>
-                            <div class="down-box">
-                                <div class="down playstore">
-                                    <img src="./img/playstore.png" />
-                                </div>
-                                <div class="down appstore">
-                                    <img src="./img/appstore.png" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="page2" style="display: none;">
-                    <div class="scroller owl-carousel">
-                        <div class="sub-videos">
-                            <div class="sub-video">
-                                <video preload="auto" playsinline muted loop>
-                                    <source src="./videos/left_video2.mp4#t=20" type="video/mp4"> 
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="page3">
-                    <div id="terms" class="terms-container">
-                        <div class="subject"">
-                            <div>TIPP 이용약관</div>
-                            <img class="close" src="./img/close.png">
-                        </div>
-                        <div id="terms-of-use-text"></div>
-                    </div>
-                </div>
-                <div class="page4">
-                    <div id="privacy" class="privacy-policy-container">
-                        <div class="subject">
-                            <div>TIPP 개인정보 처리방침</div>
-                            <img class="close" src="./img/close.png">
-                        </div>
-                        <div id="privacy-policy-text"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <div class="contact-mobile" id="contact-mobile">
-                    <img id="contact_bt2" src="./img/contact_icon.png"/>
-                    <p id="copy_text">CONTACT@TIPPCORP.COM</p>
-                </div>
-                <div class="footer-logo">
-                    <img src="./img/footer_logo.png" />
-                </div>
-                <div class="footer-desc-mobile">
-                    © 2020 TIPP CORP.<br>ALL RIGHTS RESERVED.
-                </div>
-                <div class="footer-desc">
-                    © 2020 TIPP CORP. ALL RIGHTS RESERVED.
-                </div>
-                <div class="botton-container">
-                    <div class="botton" id="terms-of-use">
-                        TIPP - 이용약관
-                    </div>
-                    <div class="botton" id="privacy-policy">
-                        개인정보 처리방침
-                    </div>
-                </div>
-            </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,viewport-fit=cover">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/style.css?v=15">
+  <!-- <link rel="stylesheet" type="text/css" href="./css/style.css?v=15"> -->
+  <link rel="stylesheet" href="./scripts/owlcarousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- <script src="./scripts/owlcarousel/dist/owl.carousel.min.js"></script> -->
+  <script type="text/javascript" src="./scripts/script.js?v=15"></script>
+  <title>TIPP</title>
+</head>
+
+<body>
+  <div style="overflow: hidden;">
+    <div class="load_modal">
+      <div class="logo" style="flex-direction: column;">
+        <img src="./img/logo.png" />
+      </div>
     </div>
+    <div class="container">
+      <div id="nav">
+        <div class="logo" id="home">
+          <img src="./img/logo.png" />
+        </div>
+        <div class="contact">
+          <img id="contact_bt" src="./img/contact_icon.png" />
+          <p id="copy_text">CONTACT@TIPPCORP.COM</p>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="page1">
+          <div class="video-box" id="left-video">
+            <div class="main-videos">
+              <div class="main-video left">
+                <video preload="auto" playsinline muted loop controls="false">
+                  <source src="./videos/left_video2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="video-slogan">
+              <p class="left-text">질문하고</p>
+              <img src="./img/right_arrow.png" />
+            </div>
+          </div>
+
+          <div class="slogan-box">
+            <div class="slogan">
+              <div style="position: relative;">
+                <img src="./img/slogan.png" />
+                <div class="down-box">
+                  <div class="down appstore">
+                    <button class="down btn-appstore">
+                      <i class="fab fa-apple"></i>
+                      <span>앱스토어 런칭 준비 중</span>
+                    </button>
+                    <!-- <img src="./img/appstore.png" /> -->
+                  </div>
+                  <div class="down playstore instagram">
+                    <!-- <img src="./img/playstore.png" /> -->
+                    <a href="https://www.instagram.com/tipp_official" target="blank">  
+                      <button class="down btn-instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Tipp 공식 인스타그램</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="video-box" id="right-video">
+            <div class="video-slogan">
+              <img src="./img/left_arrow.png" />
+              <p class="right-text">답하고</p>
+            </div>
+            <div class="main-videos">
+              <div class="main-video right">
+                <video preload="auto" playsinline muted loop controls="false">
+                  <source src="./videos/right_video2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page1-moblie">
+          <div class="video-container">
+            <div class="video-box" id="left-video">
+              <div class="main-videos">
+                <div class="main-video left">
+                  <video preload="auto" muted loop controls="false" playsinline>
+                    <source src="./videos/left_video2.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="slogan-box">
+              <div class="slogan">
+                <img src="./img/slogan_mobile.png" />
+              </div>
+              <div class="down-box">
+                <div class="down playstore">
+                  <!-- <img src="./img/playstore.png" /> -->
+                  <button class="down btn-appstore">
+                    <i class="fab fa-apple"></i>
+                    <span>앱스토어 런칭 준비 중</span>
+                  </button>
+                </div>
+                <div class="down appstore">
+                  <!-- <img src="./img/appstore.png" /> -->
+                  <a href="https://www.instagram.com/tipp_official" target="blank">
+                    <button class="down btn-instagram">
+                      <i class="fab fa-instagram"></i>
+                      <span>Tipp 공식 인스타그램</span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page2" style="display: none;">
+          <div class="scroller owl-carousel">
+            <div class="sub-videos">
+              <div class="sub-video">
+                <video preload="auto" playsinline muted loop>
+                  <source src="./videos/left_video2.mp4#t=20" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page3">
+          <div id="terms" class="terms-container">
+            <div class="subject"">
+                            <div>TIPP 이용약관</div>
+                            <img class=" close" src="./img/close.png">
+            </div>
+            <div id="terms-of-use-text"></div>
+          </div>
+        </div>
+        <div class="page4">
+          <div id="privacy" class="privacy-policy-container">
+            <div class="subject">
+              <div>TIPP 개인정보 처리방침</div>
+              <img class="close" src="./img/close.png">
+            </div>
+            <div id="privacy-policy-text"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="contact-mobile" id="contact-mobile">
+          <img id="contact_bt2" src="./img/contact_icon.png" />
+          <p id="copy_text">CONTACT@TIPPCORP.COM</p>
+        </div>
+        <div class="footer-logo">
+          <img src="./img/footer_logo.png" />
+        </div>
+        <div class="footer-desc-mobile">
+          © 2020 TIPP CORP.<br>ALL RIGHTS RESERVED.
+        </div>
+        <div class="footer-desc">
+          © 2020 TIPP CORP. ALL RIGHTS RESERVED.
+        </div>
+        <div class="botton-container">
+          <div class="botton" id="terms-of-use">
+            TIPP - 이용약관
+          </div>
+          <div class="botton" id="privacy-policy">
+            개인정보 처리방침
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

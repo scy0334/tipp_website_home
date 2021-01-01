@@ -203,7 +203,7 @@
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   margin: 0px;
   background-color: #fafafa;
   min-height: 100vh;
@@ -248,7 +248,7 @@ body .load_modal {
           animation: start_modal 0.5s linear both 0.6s;
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
-  background-color: #faff2c;
+  background-color: #FAFF2C;
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,7 +303,7 @@ body .load_modal .logo {
       -ms-flex-align: center;
           align-items: center;
   height: 47px;
-  background-color: #faff2c;
+  background-color: #FAFF2C;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -407,89 +407,16 @@ body .load_modal .logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .container .main-content .page1 .slogan-box .down-box img {
   height: 42px;
 }
 
-.container .main-content .page1 .slogan-box .down-box button {
-  height: 40px;
-  width: 150px;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.container .main-content .page1 .slogan-box .down-box button.btn-appstore {
-  background-color: #ffffff;
-  border: 1.2px solid #a3a3a3;
-  color: #6d6d6d;
-}
-
-.container .main-content .page1 .slogan-box .down-box button.btn-appstore i.fa-apple {
-  font-size: 16px;
-  padding-bottom: 4px;
-  padding-right: 2px;
-}
-
-.container .main-content .page1 .slogan-box .down-box button.btn-appstore:hover {
-  background-color: #eceaea;
-}
-
-.container .main-content .page1 .slogan-box .down-box button.btn-appstore:active {
-  background-color: #f5f5f5;
-}
-
-.container .main-content .page1 .slogan-box .down-box button.btn-instagram {
-  background-color: #4e4e4e;
-  border: none;
-  color: #ffffff;
-}
-
-.container .main-content .page1 .slogan-box .down-box button.btn-instagram i.fa-instagram {
-  font-size: 16px;
-  padding-bottom: 2px;
-  padding-right: 2px;
-}
-
-.container .main-content .page1 .slogan-box .down-box button.btn-instagram:hover {
-  background-color: #333333;
-}
-
-.container .main-content .page1 .slogan-box .down-box button.btn-instagram:active {
-  background-color: #5e5e5e;
-}
-
-.container .main-content .page1 .slogan-box .down-box button:hover {
-  cursor: pointer;
-}
-
-.container .main-content .page1 .slogan-box .down-box button:active {
-  -webkit-transform: translateY(1px);
-  transform: translateY(1px);
-}
-
-.container .main-content .page1 .slogan-box .down-box button:focus {
-  outline: none;
-}
-
 .container .main-content .page1 .slogan-box .down-box .down {
   display: inline-block;
   cursor: pointer;
-  margin: 0px 4px;
+  margin: 0px 12px;
 }
 
 .container .main-content .page1 .video-slogan {
@@ -729,7 +656,7 @@ body .load_modal .logo {
         -ms-flex-align: center;
             align-items: center;
     height: 47px;
-    background-color: #faff2c;
+    background-color: #FAFF2C;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -826,77 +753,10 @@ body .load_modal .logo {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
   }
   .container .main-content .page1-moblie .video-container .slogan-box .down-box > img {
     width: 80%;
     cursor: pointer;
-  }
-  .container .main-content .page1-moblie .video-container .slogan-box .down-box a {
-    text-decoration: none;
-  }
-  .container .main-content .page1-moblie .video-container .slogan-box .down-box button {
-    height: 40px;
-    width: 120px;
-    border-radius: 10px;
-    font-size: 10px;
-    font-weight: 700;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-  .container .main-content .page1-moblie .video-container .slogan-box .down-box button.btn-appstore {
-    background-color: #ffffff;
-    border: 1.2px solid #a3a3a3;
-    color: #6d6d6d;
-  }
-  .container .main-content .page1-moblie .video-container .slogan-box .down-box button.btn-appstore i.fa-apple {
-    font-size: 14px;
-    padding-bottom: 4px;
-    padding-right: 4px;
-  }
-  .container .main-content .page1-moblie .video-container .slogan-box .down-box button.btn-appstore:hover {
-    background-color: #eceaea;
-  }
-  .container .main-content .page1-moblie .video-container .slogan-box .down-box button.btn-appstore:active {
-    background-color: #f5f5f5;
-  }
-  .container .main-content .page1-moblie .video-container .slogan-box .down-box button.btn-instagram {
-    background-color: #4e4e4e;
-    border: none;
-    color: #ffffff;
-  }
-  .container .main-content .page1-moblie .video-container .slogan-box .down-box button.btn-instagram i.fa-instagram {
-    font-size: 14px;
-    padding-top: 2px;
-    padding-right: 4px;
-  }
-  .container .main-content .page1-moblie .video-container .slogan-box .down-box button.btn-instagram:hover {
-    background-color: #333333;
-  }
-  .container .main-content .page1-moblie .video-container .slogan-box .down-box button.btn-instagram:active {
-    background-color: #5e5e5e;
-  }
-  .container .main-content .page1-moblie .video-container .slogan-box .down-box button:hover {
-    cursor: pointer;
-  }
-  .container .main-content .page1-moblie .video-container .slogan-box .down-box button:active {
-    -webkit-transform: translateY(1px);
-    transform: translateY(1px);
-  }
-  .container .main-content .page1-moblie .video-container .slogan-box .down-box button:focus {
-    outline: none;
   }
   .container .main-content .page1-moblie .video-container .slogan-box .down-box .down {
     display: -webkit-box;
@@ -1066,7 +926,7 @@ body .load_modal .logo {
         -ms-flex-align: center;
             align-items: center;
     height: 47px;
-    background-color: #faff2c;
+    background-color: #FAFF2C;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -1328,4 +1188,4 @@ body .load_modal .logo {
     margin-right: 30px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style 2.css.map */
